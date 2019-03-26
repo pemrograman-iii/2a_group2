@@ -1,0 +1,3 @@
+nama,kerjaan,bulan
+John Lagend,Accounting,November
+Dwi Septiani,IT,March
