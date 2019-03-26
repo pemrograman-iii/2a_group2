@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 26 17:21:41 2019
+
+@author: damara
+"""
+
+nama,kerjaan,bulan
+John Smith,Accounting,November
+Erica Meyers,IT,March
