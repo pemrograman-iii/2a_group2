@@ -1,0 +1,3 @@
+name,department,birthday month
+Fahmi,IT, June
+Erica Meyers,Accounting,March

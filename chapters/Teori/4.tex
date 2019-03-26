@@ -474,6 +474,126 @@ Jelaskan fungsi-fungsi yang terdapat di library csv
 	Pertama,fungsi membaca file csv.
 \end{enumerate}
 
+
+\section{Muhammad Fahmi}
+\subsection{Soal 1}
+Pengenalan CSV
+
+CSV adalah singkatan dari \textit{Comma Separated Value} adalah salah satu tipe file yang digunakan secara luas untuk keperluan programming. Tidak hanya itu, CSV pun sering digunakan dalam pengolahan suatu informasi yang dihasilkan dari spreadsheet yang akan diproses lebih lanjut melalui mesin analitik. CSV juga dianggap sebagai file yang agnostik karena dapat digunakan oleh berbagai database untuk keperluan proses backup data. File CSV sangat mudah untuk dikerjakan secara terprogram. Bahasa apa pun yang mendukung input file teks dan manipulasi string (seperti Python) dapat bekerja dengan file CSV secara langsung.
+\textbf{Contoh}
+\lstinputlisting[frame=single, caption=Contoh CSV, firstline=1, lastline=13]{src/4/1174021/Teori/1174021.py}
+
+Hasil yang diatas adalah : 
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/4/1174021/Teori/7.png}
+		\centering
+	\end{figure}
+
+\subsection{Soal 2}
+Aplikasi-aplikasi menciptakan file CSV
+
+\begin{itemize}
+	\item Text Editor
+	Ada beberapa Text Editor untuk menciptakan file CSV diantara lain : 
+	\begin{enumerate}
+		\item Notepad
+		\item Notepad++
+		\item Sublime Text
+		\item Visual Studio Code
+		dll	
+	\end{enumerate}
+
+	\item Program Spreadsheet 
+	Ada beberapa Program Spreadsheet untuk menciptakan file CSV diantara lain : 
+	\begin{enumerate}
+		\item Microsoft Excel
+		\item WPS
+		\item Google Spreadsahre
+		\item LibreOfficecalc 
+		dll	
+	\end{enumerate}
+\end{itemize}
+
+\subsection{Soal 3}
+Menulis dan membaca file CSV
+
+\begin{enumerate} 
+	\item Menulis File CSV \\
+	Cara membuat file CSV sederhana yang menulis sejumlah data. Hasilnya akan berupa file CSV di satu tempat dengan file Python, penulis file CSV.
+	
+	Berikutnya adalah kode untuk menulis file CSV menggunakan modul CSV bawaan yang dimiliki Python:
+	
+	\lstinputlisting[frame=single, caption=Menulis file CSV, firstline=17, lastline=37]{src/4/1174021/Teori/1174021.py}
+	
+	Hasil yang diatas adalah : 
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/4/1174021/Teori/8.png}
+		\centering
+	\end{figure}
+
+	\item Membaca File CSV \\
+	Sekarang kita akan mencoba membaca file CSV yang telah dihasilkan oleh aplikasi atau program lain. Dalam Python, hasil membaca setiap baris dalam file CSV akan dikonversi menjadi daftar Python.
+	
+	Berikut adalah sebuah kode sederhana untuk membaca file CSV :
+	\lstinputlisting[frame=single, caption=Membaca file CSV, firstline=42, lastline=53]{src/4/1174021/Teori/1174021.py}
+\end{enumerate}
+
+
+\subsection{Soal 4}
+Sejarah Library CSV
+
+CSV diciptakan untuk memudahkan data science dan analis karena CSV terdapat beberapa kemudahan dalam menggunakannya, CSV dapat dimaksimalkan jika dipadukan dengan Python karena Python adalah salah satu bahasa pemrograman yang bisa support ke banyak library termasuk CSV. Maka CSV menjadi salah satu pilihan yang digunakan oleh perusahaan-perushaan besar dalam mengolah datanya. Library CSV juga dibuat untuk mempermudah jika ingin melakukan export dan import dalam file CSV.
+
+\subsection{Soal 5}
+Sejarah Library Pandas
+
+Panda library dibuat agar bahasa pemrograman python dapat bersaing R dan matlab, yang digunakan untuk mengolah banyak data, membutuhkan data besar, data mining data sains dan sebagainya.
+panda adalah pustaka berlisensi BSD dan sumber terbuka yang menyediakan struktur data yang mudah digunakan dan berkinerja tinggi serta analisis data untuk bahasa pemrograman Python.
+Dengan demikian, Pandas adalah pustaka analisis data yang memiliki struktur data yang kita butuhkan untuk membersihkan data mentah menjadi bentuk yang cocok untuk analisis (mis. Tabel). Penting untuk dicatat di sini bahwa karena melakukan tugas-tugas penting seperti menyinkronkan data untuk perbandingan dan menggabungkan set data, menangani data yang hilang, dll. Pandas awalnya dirancang untuk menangani data keuangan, karena alternatif umum adalah menggunakan spreadsheet (seperti Microsoft Excel).
+
+\subsection{Soal 6}
+Jelaskan fungsi-fungsi yang terdapat di library CSV
+
+Ada 2 fungsi yang terdapat pada library CSV yaitu :
+\begin{enumerate} 
+	\item Menulis File CSV 
+	Cara membuat file CSV sederhana yang menulis sejumlah data. Hasilnya akan berupa file CSV di satu tempat dengan file Python, penulis file CSV.
+	
+	Berikutnya adalah kode untuk menulis file CSV menggunakan modul CSV bawaan yang dimiliki Python:
+	
+	\lstinputlisting[frame=single, caption=Menulis file CSV, firstline=17, lastline=37]{src/4/1174021/Teori/1174021.py}
+	
+	Hasil yang diatas adalah : 
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/4/1174021/Teori/8.png}
+		\centering
+	\end{figure}
+	
+	\item Membaca File CSV 
+	Sekarang kita akan mencoba membaca file CSV yang telah dihasilkan oleh aplikasi atau program lain. Dalam Python, hasil membaca setiap baris dalam file CSV akan dikonversi menjadi daftar Python. \\
+	
+	Fungsi ini bisa menggunakan list dan dictionary
+	
+	\begin{itemize}
+		\item Dengan List :
+		Berikut adalah sebuah kode sederhana untuk membaca file CSV :
+		\lstinputlisting[frame=single, caption=List, firstline=1, lastline=13]{src/4/1174021/Teori/1174021.py}
+		
+		\item Dengan Dictionary : 
+		\lstinputlisting[frame=single, caption=Dictionary, firstline=57, lastline=68]{src/4/1174021/Teori/1174021.py}
+		
+	\end{itemize}
+	
+\end{enumerate}
+
+\subsection{Soal 7}
+Jelaskan fungsi-fungsi yang terdapat di library pandas.
+
+Tidak jauh berbeda dengan fungsi yang ada pada Library CSV, hanya saja panda lebih mudah, singkat dan lebih rapih. Berikut contohnya :
+\lstinputlisting[frame=single, caption=Pandas, firstline=73, lastline=75]{src/4/1174021/Teori/1174021.py}
+
+
+
 \section{Harun Ar-Rasyid}
 \subsection{Soal 1}
 Isi jawaban soal ke-1
