@@ -698,3 +698,164 @@ Seperti halnya dengan blok kode yang lain, kita juga harus memberikan identasi u
 	\caption{Hasil cek plagiat.}
 \end{figure}
 
+
+
+\section{Muhammad Fahmi}
+\subsection{Pemahaman Teori}
+\subsubsection{Soal No. 1}
+Apa itu fungsi device manager di windows dan folder /dev di linux.
+
+\textbf{Pengertian Device Manager}
+Device manager ialah perangkat lunak yang berfungsi untuk menampilkan seluruh perangkat keras yang di-inisialisasi atau dikenali oleh sebuah sistem operasi Windows. Device Manager juga membantu untuk mengelola semua perangkat keras yang terpasang dan terdeteksi dalam sistem Windows. Perangkat keras tersebut bisa berupa harddisk, kartu VGA, sound, keyboard, perangkat USB dan yang lainnya.
+
+\textbf{Fungsi Device Manager}
+Device Manager memiliki fungsi-fungsi antara lain :
+\begin{enumerate}
+	\item Menunjukkan status mengenai suatu perangkat keras.
+	\item Menunjukkan informasi detail mengenai suatu perangkat keras.
+	\item Mengelola driver perangkat keras.
+	\item Menonaktifkan dan mengaktifkan perangkat keras.
+	\item Mengidentifikasi konflik antar perangkat keras.
+	\item Memberitahukan terjadinya masalah pada perangkat keras.
+\end{enumerate}
+
+\textbf{Folder /dev di linux}
+Folder /dev merupakan representasi dari drive yang terhubung ke sistem operasi Linux dan oleh sistem dianggap sebagai file-file direktori. Biasanya sering ditampilkan direktori seperti /dev/sda1 yang mewakili Drive SATA pertama dalam sistem.
+
+\subsubsection{Soal No. 2}
+Jelaskan langkah-langkah instalasi driver dari arduino.
+
+\textbf(Langkah-langkah}
+Berikut ini adalah langkah-langkah instalasi driver dari Arduino UNO di Windows:
+
+\begin{enumerate}
+	\item Pertama pastikan Arduino IDE telah terinstall pada PC anda.
+	\item Hubungkan port USB Arduino Uno ke port USB PC.
+	\item Kemudian PC anda akan mendeteksi perangkat baru yang terpasang dan akan muncul oemberitahuan seperti ini : 
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174021/Teori/1.png}
+		\centering
+	\end{figure}
+	\item Karena Arduino Uno baru pertama kali terpasang, maka akan muncul pemberitahuan seperti ini :
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174021/Teori/2.png}
+		\centering
+	\end{figure}
+	\item Buka windows start lalu cari Device Manager lalu klik.
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174021/Teori/3.png}
+		\centering
+	\end{figure}
+	\item Setelah Device Manager yang ada klik terbuka, silahkan cari Unknown Device yang berada di Other Device.
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174021/Teori/4.png}
+		\centering
+	\end{figure}
+	\item Kemudian klik kanan, lalu pilih Update Driver Software.
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174021/Teori/5.png}
+		\centering
+	\end{figure}
+	\item Setelah itu muncul halaman baru, lalu pilih Browse my computer for driver software.
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174021/Teori/6.png}
+		\centering
+	\end{figure}
+	\item Lalu cari folder yang terinstall Arduino IDE dengan mengklik browse. Kemudian klik Next.
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174021/Teori/7.png}
+		\centering
+	\end{figure}
+	\item Kemudian Windows akan mencari dan menginstall driver yang berada pada folder tersebut.
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174021/Teori/8.png}
+		\centering
+	\end{figure}
+	\item Setelah itu akan muncul halaman baru, lalu klik Install.
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174021/Teori/9.png}
+		\centering
+	\end{figure}
+	\item Jika berhasil terinstall maka akan muncul halaman seperti ini :
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174021/Teori/10.png}
+		\centering
+	\end{figure}
+\end{enumerate}
+
+\subsection{Soal No. 3}
+Jelaskan bagaimana cara membaca baudrate dan port dari komputer yang sudah terinstall driver.
+
+\hfill \break
+\textbf{Membaca Baudrate dari Komputer}
+\begin{enumerate}
+	\item Pertama buka windows start. Cari Device Manager, lalu klik.
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174021/Teori/11.png}
+		\centering
+	\end{figure}
+	
+	\item Kemudian pilih ''Ports (COM \& LPT)''.
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174021/Teori/12.png}
+		\centering
+	\end{figure}
+	
+	\item Klik dua kali pada COM yang terhubung.
+	\item Pilih tab ''Port Settings'', lalu lihat di ''Bit per second''.
+\end{enumerate}
+
+
+\hfill \break
+\textbf{Membaca Port dari Komputer}
+
+\begin{enumerate}
+	\item Pertama buka ''Start''. Cari ''Device Manager'', lalu klik.
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174006/Teori/d1.png}
+		\centering
+	\end{figure}
+
+	\item Kemudian pilih ''Ports (COM \& LPT)''.
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174006/Teori/d3.png}
+		\centering
+	\end{figure}
+
+	\item Port dari Arduino telah terbaca oleh PC.
+	\begin{figure}[H]
+		\includegraphics[width=10cm]{figures/5/1174006/Teori/d2.png}
+		\centering
+	\end{figure}
+\end{enumerate}
+
+
+\subsection{Soal No. 4}
+Jelaskan sejarah library pyserial.
+
+\hfill \break
+PySerial adalah sebuah paket yang disedakan Python untuk menfasilitasi komunikasi serial antara PC dengan perangkat keras eksternal. PySerial juga menyediakan antarmuka untuk berkomunikasi melalui protokol komunikasi serial. Kemudian, Komunikasi serial adalah sebuah protokol komunikasi komputer tertua. Protokol komunikasi serial mendahului spesifikasi USB yang digunakan oleh beberapa komputer dan perangkat keras lain seperti mouse, keyboard, dan webcam. USB adalah singkatan dari Universal Serial Bus. USB dan dibangun di atas dan memperluas antarmuka komunikasi serial asli.
+
+\subsection{Soal No. 5}
+Jelaskan fungsi-fungsi apa saja yang dipakai dari library pyserial.
+
+\hfill \break
+Fungsi-fungsi yang dipakai dari library PySerial, yaitu:
+\begin{enumerate}
+	\item Serial - ini berfungsi untuk membuka port serial.
+	\item write(data) - ini berfungsi menulis data lewat port serial.
+	\item readline() - ini berfungsi membaca sebuah string dari port serial.
+	\item read(size) - ini berfungsi untuk membaca jumlah byte dari port serial.
+	\item close() - ini berfungsi untuk menutup port serial.
+\end{enumerate}
+
+\subsection{Soal No. 6}
+Jelaskan kenapa butuh perulangan dan tidak butuh perulangan dalam membaca serial.
+
+\hfill \break
+Pada saat membaca serial di Arduino sangat diperlukan perulangan, agar bisa membaca data secara berulang kali sehingga hasil atau data yang muncul nantinya banyak. Sedangkan apabila tidak membutuhkan perulangan maka Arduino hanya akan membaca data sekali saja.
+
+\subsection{Soal No. 7}
+Jelaskan bagaimana cara membuat fungsi yang mengunakan pyserial.
+
+\lstinputlisting[caption = Fungsi yang menggunakan pyserial, firstline=1, lastline=7]{src/5/1174021/Teori/1174021.py}
