@@ -179,10 +179,10 @@ tryExceptError()
 
 # In[7]: Main
 
-bar = __import__('1174006_bar')
-scat = __import__('1174006_scatter')
-pie = __import__('1174006_pie')
-plot = __import__('1174006_plot')
+bar = __import__('1174003_bar')
+scat = __import__('1174003_scatter')
+pie = __import__('1174003_pie')
+plot = __import__('1174003_plot')
 
 bar.bar()
 scat.scatter()
