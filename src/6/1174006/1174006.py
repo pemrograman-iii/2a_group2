@@ -77,14 +77,14 @@ plt.show()
 
 # In[6]: Pie Plot
 
+
+ 
+
+
+
+
 import matplotlib.pyplot as plt
- 
-days = [1,2,3,4,5]
- 
-tidur =[7,8,6,11,7]
-makan = [2,3,4,3,7]
-kuliah =[7,8,7,2,4]
-jalan_jalan = [8,5,7,8,13]
+
 potong = [7,2,2,12]
 kegiatan = ['Tidur','Makan','Kuliah','Jalan-jalan']
 kolom = ['c','m','y','g']
@@ -155,3 +155,36 @@ plt.xlabel('Umur')
 plt.ylabel('Jumlah Orang')
 plt.title('Histogram')
 plt.show()
+
+# In[6]: Penanganan Error
+
+from matplotlib import pyplot as plt
+
+def tryExceptError():
+    try:
+        a=[1,2,3]
+        y=[5,2,4]        
+        plt.plot(x,y)        
+        plt.show()        
+    except SyntaxError:
+        print("Kesalahan penulisan syntax")
+    except NameError:
+        print("Variable tersebut tidak ada")
+    except TypeError:
+        print("Tipe data salah")
+    except:
+        print("Terjadi sebuah kesalahan")
+        
+tryExceptError()
+
+# In[7]: Main
+
+bar = __import__('1174006_bar')
+scat = __import__('1174006_scatter')
+pie = __import__('1174006_pie')
+plot = __import__('1174006_plot')
+
+bar.bar()
+scat.scatter()
+pie.pie()
+plot.plot()
