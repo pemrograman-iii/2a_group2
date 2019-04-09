@@ -155,3 +155,35 @@ plt.xlabel('Usia')
 plt.ylabel('Jumlah Orang')
 plt.title('Histogram')
 plt.show()
+# In[6]: Penanganan Error
+
+from matplotlib import pyplot as plt
+
+def tryExceptError():
+    try:
+        a=[1,2,3]
+        y=[5,2,4]        
+        plt.plot(x,y)        
+        plt.show()        
+    except SyntaxError:
+        print("Kesalahan penulisan syntax")
+    except NameError:
+        print("Variable tersebut tidak ada")
+    except TypeError:
+        print("Tipe data salah")
+    except:
+        print("Terjadi sebuah kesalahan")
+        
+tryExceptError()
+
+# In[7]: Main
+
+bar = __import__('1174026_bar')
+scat = __import__('1174026_scatter')
+pie = __import__('1174026_pie')
+plot = __import__('1174026_plot')
+
+bar.bar()
+scat.scatter()
+pie.pie()
+plot.plot()
