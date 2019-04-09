@@ -2,7 +2,7 @@ from matplotlib import pyplot as plt
 
 def scatter():
 
-    hasil = 1174006 % 3 + 2
+    hasil = 1174031 % 3 + 2
     
     x = [1,1.5,2,2.5,3,3.5,3.6]
     y = [7.5,8,8.5,9,9.5,10,10.5]

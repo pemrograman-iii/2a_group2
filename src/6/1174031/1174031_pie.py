@@ -2,7 +2,7 @@ from matplotlib import pyplot as plt
 
 def pie():
 
-    hasil = 1174006 % 3 + 2
+    hasil = 1174031 % 3 + 2
     
     potong = [7,4,2,12]
     kegiatan = ['Tidur','Makan','Kuliah','Jalan-jalan']

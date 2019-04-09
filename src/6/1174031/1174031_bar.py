@@ -2,7 +2,7 @@ from matplotlib import pyplot as plt
 
 def bar():
 
-    hasil = 1174006 % 3 + 2
+    hasil = 1174031 % 3 + 2
     
     for i in range(1, hasil+1):
         plt.subplot(2,2,i)

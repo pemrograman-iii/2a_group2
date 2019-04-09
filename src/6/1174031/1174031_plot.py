@@ -2,7 +2,7 @@ from matplotlib import pyplot as plt
 
 def plot():
 
-    hasil = 1174006 % 3 + 2
+    hasil = 1174031 % 3 + 2
     
     x = [2014,2015,2016,2017,2018,2019]
     y = [76,87,105,122,148,170]
