@@ -287,65 +287,66 @@ Seperti halnya dengan blok kode yang lain, kita juga harus memberikan identasi u
 \section{Damara Benedikta}
 \subsection{Apa itu fungsi device manager di windows dan folder /dev di linux}
 Windows
-Device Manager merupakan Panel Kontrol dalam sistem operasi Microsoft Windows. Ini memungkinkan pengguna untuk melihat dan mengontrol perangkat keras yang terpasang pada komputer. Ketika beberapa bagian perangkat keras tidak berfungsi, perangkat keras yang terkait akan disorot oleh pengguna. Daftar perangkat keras dapat disortir berdasarkan berbagai kriteria.
+Device Manager merupakan sebuah Panel Kontrol dalam sistem operasi Microsoft Windows.
+ Yang memungkinkan pengguna untuk dapat melihat dan mengontrol perangkat keras (hardware) yang terpasang pada komputer. 
+ Saat beberapa bagian perangkat keras (hardware) tidak dapat berfungsi,maka perangkat keras yang terkait akan disorot oleh pengguna.
+ Daftar perangkat keras dapat disortir berdasarkan berbagai kriteria.
 
 Untuk setiap perangkat, pengguna dapat:
 \begin{itemize}
-     \item Menyediakan driver perangkat sesuai dengan Model Driver Windows
-     \item Aktifkan atau nonaktifkan perangkat
-     \item  Beri tahu Windows untuk mengabaikan perangkat yang tidak berfungsi
-     \item Lihat sifat teknis lainnya
+     \item Menyediakan driver perangkat sesuai dengan Model Driver pada Windows
+     \item Aktifkan atau menonaktifkan perangkat
+     \item Memberi tahu Windows untuk mengabaikan perangkat yang tidak berfungsi
+     \item Melihat sifat teknis lainnya
 \end{itemize}
-Device Manager diperkenalkan dengan Windows 95 dan kemudian ditambahkan ke Windows 2000. Dalam versi berbasis NT, ini dimasukkan sebagai snap-in Konsol Manajemen Microsoft.
+Device Manager diperkenalkan dengan Windows 95 dan kemudian ditambahkan ke dalam Windows 2000. Dalam versi berbasis NT, ini dimasukkan sebagai snap-in Konsol Manajemen Microsoft.
 
 Linux
 / dev adalah lokasi file khusus atau perangkat. Ini adalah direktori yang sangat menarik yang menyoroti satu aspek penting dari sistem file Linux - semuanya adalah file atau direktori. yang fungsinya untuk menyimpan sebuah konfigurasi device ataupun hardware dari system
 
 \subsection{langkah-langkah instalasi driver dari arduino}
 Hubungkan sistem minimun Arduino Uno dan komputer dengan kabel USB type B
-Kemudian pada bagian kanan didesktop PC anda, akan muncul popup “Installing device driver software. Pada sIstem operasi Windows tidak tersedia driver untuk Arduino Uno kemudian proses instalasinya dilakukan secara manual.
-Yang pertama kalian buka terlebih dahulu Device Managernya, dengan cara pada bagian Search Program and Files kemudian ketikkan “device manager” (tanpa tanda petik), Pada bagian Control Panel akan muncul Device Manager, klik untuk menjalankannya.
-Setelah itu kalian cari Unknown device pada bagian Other device, yang biasanya terdapat tanda seru berwarna kuning, itu disebabkan karena penginstallan tidak berjalan dengan sempurna
-Selanjutnya Klik kanan pada “Unknown device” kemudian pilihlah Update Driver Software.
-Pilihlah Browse my computer for driver software.
-Arahkan lokasi folder ke folder."\"arduino-1.0.5"\"drivers. Pastikan check-box kemudian centang include subfolders. Kemudian Klik Next untuk melanjutkan instalasi driver.
+selanjutnya  pada bagian paling kanan didesktop PC kalian, akan muncul popup “Installing device driver software". Dalam sistem operasi Windows tidak tersedia driver untuk menginstal Arduino Uno sehuingga pada proses instalasinya akan dilakukan secara manual.
+Yang pertama kalian buka terlebih dahulu Device Manager, caranya adalah pada bagian Search Program and Files kemudian ketikkan “device manager” (tanpa tanda petik), Pada bagian Control Panel akan muncul Device Manager,selanjutnya kalian klik untuk dapat menjalankannya.
+Setelah itu kalian cari Unknown device pada bagian Other device, yang seringkali terdapat tanda seru berwarna kuning, tanda tersebut idisebabkan karena penginstallan yang tidak berjalan dengan sempurna.
+Selanjutnya kalian Klik kanan pada “Unknown device” kemudian pilihlah Update Driver Software.
+Kemudian kalian pilih Browse my computer for driver software.
+Arahkan lokasi folder ke folder."\"arduino-1.0.5"\"drivers. Pastikan check-box kemudian centang include subfolders. Kemudian kalian  Klik Next untuk melanjutkan instalasi driver.
 Setelah itu  lanjutkan dengan mengklik Install pada tampilan Windows Security.
-Jika instalasi driver telah berhasil maka akan muncul Windows has successfully updated your driver software.
-Perhatikan dan ingat nama COM Arduino Uno, karena nama COM ini yang akan digunakan untuk meng-upload program nantinya.
-
+Jika instalasi driver telah berhasil terinstal maka akan muncul Windows has successfully updated your driver software.
+Perhatikan dan ingat nama COM Arduino Uno, karena nama COM  tersebut nantinya akan berguna untuk mengupload sebuah program selanjutnya. .
 \subsection{Jelaskan bagaimana cara membaca baudrate dan port dari komputer yang sudah terinstal driver}
-Berikut ini merupakan cara membaca baudrate dan port dari komputer yang sudah terinstal driver :
+Diabawah ini merupakan cara cara untuk membaca baudrate dan port dari komputer yang sudah terinstal driver :
 \begin{itemize}
-	\item Sambungkan port USB arduino dengan port USB pc
-	\item Kemudian buka software arduino pada pc
-	\item Setelah itu, pilih tipe arduino yang digunakan
-	\item Kemudian memilih serial port yang aktif  
-	\item Selanjutnya untuk memasukkan program pada arduino, klik tombol upload
-	\item Setelah proses upload selesai, buka fitur serial monitor
-	\item Lalu sesuaikan Baudrate pada serial monitor dengan Baudrate yang terdapat pada program
+	\item Pertama yang dilakukan Sambungkan port USB arduino dengan port USB pc kalian 
+	\item Kemudian buka software arduino pada pc kalian 
+	\item Setelah itu, pilih tipe arduino yang akan kalian gunakan
+	\item Kemudian kalian pilih  serial port yang aktif  
+	\item Selanjutnya untuk memasukkan program tersebut pada arduino, kalian klik tombol "upload"
+	\item Setelah proses upload selesai, kemudian kalian buka fitur serial monitor
+	\item Lalu kalian sesuaikan Baudrate pada serial monitor tersebut dengan Baudrate yang terdapat didalam program
 \end{itemize}
 
 \subsection{Jelaskan sejarah library pyserial}
-Pyserial berguna untuk merangkum akses untuk port serial. Pyserial menyediakan backends untuk Python yang berjalan di Windows, Linux, BSD (mungkin sistem yang mendukung POSIX), Jython dan IronPython (.NET dan Mono). Modul bernama "serial" secara otomatis memilih backend yang sesuai. Antarmuka berbasis kelas yang sama pada semua platform yang didukung.
+Library pyserial merupakan sebuah modul yang memudahkan kita untuk  merangkum akses untuk membuat data port serial. Dimana library pyserial menyediakan backends untuk Python yang berjalan di Windows, Linux, BSD , Jython dan IronPython .  
 Akses ke pengaturan port melalui properti Python.
 Dukungan untuk berbagai ukuran byte, bit stop, paritas dan kontrol aliran dengan RTS / CTS dan / atau Xon / Xoff.
-Bekerja dengan atau tanpa menerima batas waktu.
-File seperti API dengan "read" dan "write" ("readline" dll. Juga didukung).
-File-file dalam paket ini adalah 100 persen Python murni.
-Port diatur untuk transmisi biner. Tidak ada stripping byte NULL, terjemahan CR-LF dll. (Yang berkali-kali diaktifkan untuk POSIX.) Ini membuat modul ini bermanfaat secara universal.
-Kompatibel dengan pustaka io (Python 2.6+)
+dapat bekerja dengan atau tanpa menerima batas waktu.
+library pyserial juga mendukung jenis File seperti API dengan "read" dan "write" ("readline" dll. Juga didukung).
+File-file dalam paket tersebut merupakan   Python murni.
+Port didalam library pyserial ini diatur untuk transmisi biner.
 
 \subsection{Jelaskan fungsi-fungsi apa saja yang dipakai dari library pyserial}
-Serial – fungsi ini untuk membuka port serial
-Write(data) – untuk menulis data lewat port serial
-Readline() – untuk membaca string dari port serial
-Read(size) – untuk membaca jumlah byte dari port serial
-Close() – ini untuk menutup port serial 
+Serial – fungsi serial merupakan fungsi yang digunakan  untuk membuka port serial
+Write(data) –fungsi write merupakan fungsi yang digunakan untuk menulis data melalui port serial
+Readline() – fungsi readline merupakan fungsi untuk membaca string dari port serial
+Read(size) – fungsi read merupakan fungsi untuk membaca jumlah byte dari port serial
+Close() – fungsi close merupakan fungsi yang digunakan untuk menutup port serial 
 
 \subsection{Jelaskan kenapa butuh perulangan dalam tidak butuh perulangan dalam membaca serial}
-Perualangan dalam bahasa pemrograman berfungsi menyuruh komputer melakukan sesuatu secara berulang-ulang. Terdapat dua jenis perualangan dalam bahasa pemrograman python, yaitu perulangan dengan for dan while.
-Perulangan for disebut counted loop (perulangan yang terhitung), sementara perulangan while disebut uncounted loop (perulangan yang tak terhitung). Perbedaan yang terlihat adalah pada perulangan for digunakan untuk mengulangi kode yang sudah diketahui banyak perulangannya. Sedangkan perulangan while digunakan pada perulangan yang memiliki syarat dan tidak tentu berapa banyak perulangannya.
-Perulangan diperlukan agar dapat membaca data secara berulang kali sehingga data yang muncul lebih dari satu.  Sedangkan apabila tidak memakai perulangan maka data akan terbaca satu kali saja.
+Dalam sebuah bahasa pemrograman  Perualangan berfungsi untuk memerintahkan sebuah komputer melakukan sesuatu secara berulang-ulang. Terdapat dua jenis perualangan dalam bahasa pemrograman python, yaitu perulangan dengan for dan while.
+Dimana perulangan for disebut counted loop (perulangan yang terhitung), sementara perulangan while disebut uncounted loop (perulangan yang tak terhitung). Perbedaan dari kedua perulangan tersebut  yang terlihat adalah pada perulangan for digunakan untuk melakukan perulangan kode yang sudah diketahui banyak perulangannya. Sedangkan perulangan while digunakan pada perulangan yang memiliki syarat dan tidak tentu berapa banyak perulangannya.
+Perulangan diperlukan agar dapat membaca data secara berulang kali. sehingga data-data dapat terbaca beberapa kali tidak hanya sekali saja. Sedangkan apabila tidak memakai perulangan maka data akan terbaca satu kali saja.
 
 \subsection{Jelaskan bagaimana cara membuat fungsi yang mengunakan pyserial}
 Berikut merupakan contoh penggunaan fungsi yang menggunakan pyserial
